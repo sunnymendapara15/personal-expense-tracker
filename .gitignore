@@ -1,0 +1,20 @@
+# Python & backend
+backend/__pycache__/
+backend/*.db
+backend/.venv/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.local
+.env.*.local
+
+# Node & frontend
+frontend/node_modules/
+frontend/build/
+
+# Editor directories and system files
+.idea/
+.vscode/
+.DS_Store
+thumbs.db

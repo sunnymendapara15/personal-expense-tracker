@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import ExpenseFilters from "./components/ExpenseFilters";
 import ExpenseForm from "./components/ExpenseForm";
 import { fetchExpenses, createExpense } from "./services/api";
-import "/App.css";
+import "./App.css";
 
 const STORAGE_KEY = "personal-expense-tracter.expenses";
 const categories = [

@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import ExpenseFilters from "./components/ExpenseFilters";
 import ExpenseForm from "./components/ExpenseForm";
+import ExpenseList from "./components/ExpenseList";
 import { fetchExpenses, createExpense } from "./services/api";
 import "./App.css";
 
@@ -126,56 +127,4 @@ function App() {
   };
 
   const handleClearFilters = () => {
-    setFilters(blankFilters());
-  };
-
-  return (
-    <div className="app-shell">
-      <header className="app-header">
-        <div>
-          <p className="eyebrow">Daily balance · simple journal</p>
-          <h1>Personal Expense Tracker</h1>
-          <p className="lead">
-            Add, filter, and review your expenses with a clean, responsive interface. Data saves to your
-            device whether or not the API is reachable.
-          </p>
-        </div>
-        <div className="status-chip">{loading ? "Syncing…" : status}</div>
-      </header>
-
-      <section className="stats-row">
-        <article>
-          <p className="label">Total spending</p>
-          <p className="value">${totalSpent.toFixed(2)}</p>
-          <p className="subtext">{filteredExpenses.length} {filteredExpenses.length === 1 ? "entry" : "entries"} shown</p>
-        </article>
-        <article>
-          <p className="label">Data source</p>
-          <p className="value">{expenses.length ? "LocalStorage" : "—"}</p>
-          <p className="subtext">FastAPI ready; syncing on save</p>
-        </article>
-      </section>
-
-      <section className="filters-card">
-        <div className="filters-header">
-          <h2>Filters</h2>
-          <button type="button" className="ghost" onClick={handleClearFilters}>
-            Reset
-          </button>
-        </div>
-        <ExpenseForm filters={filters} categories={categories} onChange={handleFilterChange} />
-      </section>
-
-      <section className="content-grid">
-        <div className="panel">
-          <ExpenseForm categories={categories} onSubmit={handleAddExpense} />
-        </div>
-        <div className="panel">
-          <ExpenseList expenses={filteredExpenses} />
-        </div>
-      </section>
-    </div>
-  );
-}
-
-export default App;
+    setFontnext (StringSm�leCol(dita,event)[dation + define(messcris) <#g

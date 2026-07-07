@@ -71,4 +71,20 @@ function ExpenseForm({ categories = [], onSubmit }) {
       <label>
         Category
         <select value={form.category} onChange={handleChange("category")}>
-          
+          <option value="">Select category</option>
+          {categories.map((category) => (
+            <option key={category} value={category}>
+              {category}
+            </option>
+          ))}
+        </select>
+      </label>
+
+      {error && <p className="error-text">{error}</p>}
+
+      <button type="submit">Save expense</button>
+    </form>
+  );
+}
+
+export default ExpenseForm;
